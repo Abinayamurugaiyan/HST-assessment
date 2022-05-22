@@ -1,0 +1,46 @@
+<div class="wrapper">
+    <div [ngClass]="isOpenBasketOverlay ? 'modal-background' : 'main-content' ">
+        <div class="courses-container" *ngFor="let course of courses">
+            <img class="imageCourses" src="{{course.ThumbnailUrl}}" alt="">
+            <h1 class="courseContent">{{course.Title}}</h1>
+            <p class="courseContent">{{course.Description}}</p>
+            <label class="courseContent" for="itemsToPurchase">Items to purchase</label>
+            <div class="courseContent">
+                <input id="quantity" type="number" name="quantity" #quantity>
+            </div>
+            <div>
+                <button class="addToBasket" type="button" (click)="openBasketOverlay(course, quantity)">Add to
+                    Basket</button>
+            </div>
+            <div>
+                <button class="addToBasket moreInfo" type="button">More Info</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="addToBasketOverlay" *ngIf="isOpenBasketOverlay">
+    <div class="overlayContent">
+        <h1>Added to cart</h1>
+        <div class="selectedCourse">
+            <img class="selectedCourseImg" src="{{selectedCourse.ThumbnailUrl}}" alt="">
+            <h3>{{selectedCourse.Title}}</h3>
+            <div class="qtyTitle">Qty</div>
+            <div id="qty">{{quantity}}</div>
+            <button class="buttonCheckout" type="button">Checkout</button>
+        </div>
+        <h3 class="crossSellTitle">You might also be interested in..</h3>
+        <div class="crossSellsWrapper">
+            <div class="crossSellItems" *ngFor="let item of crossSellingItems">
+                <img src="{{item.ThumbnailUrl}}" alt="">
+                <h4>{{item.Title}}</h4>
+                <p>{{item.Description}}</p>
+            </div>
+            <div class="addAllToCartWrapper">
+                <button class="buttonAddAllToCart" type="button">Add all to cart</button>
+            </div>
+        </div>
+        <div class="buttonContinueShoppingWrapper">
+            <button class="buttonContinueShopping" type="button">Continue shopping</button>
+        </div>
+    </div>
+</div>

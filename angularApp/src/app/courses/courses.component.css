@@ -1,0 +1,189 @@
+.wrapper {
+    margin-right: 4px;
+    margin-left: 5px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 15px;
+}
+
+.imageCourses {
+    width: 459px;
+    height: 300px;
+}
+
+#quantity {
+    margin-top: 24px;
+    margin-left: -35px;
+    padding: 15px 32px;
+    width: 77%;
+}
+
+.addToBasket {
+    background-color: #206BED;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 10px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 86%;
+}
+
+.moreInfo {
+    background-color: gray;
+}
+
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 200ms;
+    z-index: 900;
+}
+
+.courses-container {
+    border: 1px solid whitesmoke;
+    width: 459px;
+    height: auto;
+}
+
+.courses-container>div {
+    text-align: center;
+}
+
+.wrapper>div {
+    text-align: left;
+    font-size: 1em;
+    box-sizing: border-box;
+    border: 1px solid whitesmoke;
+}
+
+.wrapper>img {
+    width: 50%;
+    position: relative;
+}
+
+.addToBasketOverlay {
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.overlayContent {
+    position: absolute;
+    padding: 20px;
+    background-color: white;
+    margin: 214px;
+    left: 200px;
+    width: 41%;
+    height: auto;
+    top: -20%;
+}
+
+.selectedCourseImg {
+    width: 108px;
+    height: 80px;
+}
+
+.buttonCheckout {
+    position: relative;
+    top: -30px;
+    padding: 9px;
+    margin-left: -13px;
+}
+
+h3 {
+    margin-left: 32px;
+    position: relative;
+    top: -31px;
+    display: inline-block;
+}
+
+.crossSellsWrapper {
+    border: 1px solid darkolivegreen;
+    padding: 18px;
+
+}
+
+.crossSellTitle {
+    padding-top: 38px;
+    margin: 0;
+}
+
+.crossSellItems>img {
+    width: 112px;
+    height: 80px;
+}
+
+h4 {
+    margin-left: 10px;
+    top: -58px;
+    position: relative;
+    display: inline-block;
+}
+
+.crossSellItems>p {
+    margin-top: -58px;
+    margin-left: 121px;
+}
+
+.buttonContinueShopping {
+    margin-top: 13px;
+    text-align: center;
+    border-style: none;
+    border-radius: 5px;
+    background-color: goldenrod;
+    padding: 20px;
+    width: 60%;
+}
+
+.buttonAddAllToCart {
+    float: right;
+    margin-top: -9px;
+    padding: 10px;
+    background-color: blueviolet;
+    border-style: none;
+}
+
+.addAllToCartWrapper {
+    top: -22px;
+    position: relative;
+}
+
+.buttonContinueShoppingWrapper {
+    margin-left: 142px;
+}
+
+.courseContent {
+    margin-left: 33px;
+}
+
+#qty {
+    top: -33px;
+    right: -105px;
+    position: relative;
+    margin-right: 165px;
+    display: inline-block;
+}
+
+.qtyTitle {
+    position: absolute;
+    padding-top: -11px;
+    margin-left: 98px;
+    display: inline-block;
+}
